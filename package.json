@@ -1,0 +1,31 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Plex events to Discord Webhooks",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.17.0",
+    "config": "^1.27.0",
+    "hapi": "^16.6.2",
+    "movie-art": "^1.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizowski/plex-2-discord.git"
+  },
+  "keywords": [
+    "discord",
+    "plex"
+  ],
+  "author": "Colten Rouska",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rizowski/plex-2-discord/issues"
+  },
+  "homepage": "https://github.com/rizowski/plex-2-discord#readme"
+}

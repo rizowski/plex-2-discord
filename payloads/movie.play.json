@@ -1,0 +1,70 @@
+{
+  "Account": {
+    "id": 1964067,
+    "thumb": "https://plex.tv/users/b3f6c5e83eb2dafa/avatar?c=34454250",
+    "title": "user"
+  },
+  "Metadata": {
+    "Director": [
+      {
+        "filter": "director=9032",
+        "id": 9032,
+        "tag": "Stephen Sandoval"
+      }
+    ],
+    "Writer": [
+      {
+        "filter": "writer=9022",
+        "id": 9022,
+        "tag": "Ryan Ridley"
+      },
+      {
+        "filter": "writer=9028",
+        "id": 9028,
+        "tag": "Tom Kauffman"
+      }
+    ],
+    "addedAt": 1443897144,
+    "art": "/library/metadata/2101/art/1504841793",
+    "contentRating": "TV-MA",
+    "grandparentArt": "/library/metadata/2101/art/1504841793",
+    "grandparentKey": "/library/metadata/2101",
+    "grandparentRatingKey": "2101",
+    "grandparentTheme": "/library/metadata/2101/theme/1504841793",
+    "grandparentThumb": "/library/metadata/2101/thumb/1504841793",
+    "grandparentTitle": "Rick and Morty",
+    "guid": "com.plexapp.agents.thetvdb://275274/1/11?lang=en",
+    "index": 11,
+    "key": "/library/metadata/2113",
+    "librarySectionID": 2,
+    "librarySectionKey": "/library/sections/2",
+    "librarySectionType": "show",
+    "originallyAvailableAt": "2014-04-14",
+    "parentIndex": 1,
+    "parentKey": "/library/metadata/2102",
+    "parentRatingKey": "2102",
+    "parentThumb": "/library/metadata/2102/thumb/1504841793",
+    "parentTitle": "Season 1",
+    "rating": 8.2,
+    "ratingKey": "2113",
+    "summary": "Beth and Jerry go away on a trip, so Rick decides to throw a party.",
+    "thumb": "/library/metadata/2113/thumb/1505865546",
+    "title": "Ricksy Business",
+    "type": "episode",
+    "updatedAt": 1505865546,
+    "year": 2014
+  },
+  "Player": {
+    "local": false,
+    "publicAddress": "::1",
+    "title": "Plex Web (Chrome)",
+    "uuid": "mxa7medbldu3ow29"
+  },
+  "Server": {
+    "title": "WRITTLEGUY",
+    "uuid": "52a297bee9cc0b46224e312261102cc284a9c58d"
+  },
+  "event": "media.play",
+  "owner": true,
+  "user": false
+}
