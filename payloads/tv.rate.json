@@ -1,0 +1,67 @@
+{
+  "rating": 10,
+  "event": "media.rate",
+  "user": true,
+  "owner": true,
+  "Account": {
+    "id": 1,
+    "thumb": "https://plex.tv/users/bfadfdfaf/avatar?c=12345",
+    "title": "rizowski"
+  },
+  "Server": {
+    "title": "WRITTLEGUY",
+    "uuid": "52a297bee9cc0b4622ae31f2611a2ac284a9c58d"
+  },
+  "Player": {
+    "local": true,
+    "publicAddress": "1.1.1.1",
+    "title": "Pro",
+    "uuid": ""
+  },
+  "Metadata": {
+    "librarySectionType": "show",
+    "ratingKey": "5202",
+    "key": "/library/metadata/5202",
+    "parentRatingKey": "5099",
+    "grandparentRatingKey": "5098",
+    "guid": "com.plexapp.agents.thetvdb://328634/1/5?lang=en",
+    "librarySectionID": 2,
+    "librarySectionKey": "/library/sections/2",
+    "type": "episode",
+    "title": "Point Three Percent",
+    "grandparentKey": "/library/metadata/5098",
+    "parentKey": "/library/metadata/5099",
+    "grandparentTitle": "The Good Doctor",
+    "parentTitle": "Season 1",
+    "contentRating": "TV-14",
+    "summary": "While in the exam area of St. Bonaventure Hospital, Dr. Shaun Murphy encounters a young patient who looks eerily similar to his deceased brother, Steve. After discovering his parents have hidden his diagnosis from him, Shaun struggles to understand why he doesn’t deserve to hear the truth about his own health. Meanwhile, the team can’t figure out what keeps triggering their patients’ increasingly severe allergic reactions and races to find the cause before the next one kills another patient.",
+    "index": 5,
+    "parentIndex": 1,
+    "userRating": 10,
+    "viewCount": 1,
+    "lastViewedAt": 1508815106,
+    "year": 2017,
+    "thumb": "/library/metadata/5202/thumb/1508809733",
+    "art": "/library/metadata/5098/art/1508809733",
+    "parentThumb": "/library/metadata/5099/thumb/1508809733",
+    "grandparentThumb": "/library/metadata/5098/thumb/1508809733",
+    "grandparentArt": "/library/metadata/5098/art/1508809733",
+    "originallyAvailableAt": "2017-10-23",
+    "addedAt": 1508809721,
+    "updatedAt": 1508809733,
+    "Director": [
+      {
+        "id": 24240,
+        "filter": "director=24240",
+        "tag": "Larry Teng"
+      }
+    ],
+    "Writer": [
+      {
+        "id": 24239,
+        "filter": "writer=24239",
+        "tag": "David Hoselton"
+      }
+    ]
+  }
+}

@@ -1,70 +1,592 @@
 {
+  "event": "media.play",
+  "user": true,
+  "owner": true,
   "Account": {
-    "id": 1964067,
-    "thumb": "https://plex.tv/users/b3f6c5e83eb2dafa/avatar?c=34454250",
-    "title": "user"
+    "id": 1,
+    "thumb": "https://plex.tv/users/bfadfdfaf/avatar?c=12345",
+    "title": "rizowski"
+  },
+  "Server": {
+    "title": "Sum Server",
+    "uuid": "52a297bee9cc0b4622ae31f2611a2ac284a9c58d"
+  },
+  "Player": {
+    "local": true,
+    "publicAddress": "1.1.1.1",
+    "title": "Pro",
+    "uuid": ""
   },
   "Metadata": {
+    "librarySectionType": "movie",
+    "ratingKey": "5019",
+    "key": "/library/metadata/5019",
+    "guid": "com.plexapp.agents.imdb://tt3890160?lang=en",
+    "librarySectionID": 1,
+    "librarySectionKey": "/library/sections/1",
+    "studio": "Big Talk Productions",
+    "type": "movie",
+    "title": "Baby Driver",
+    "contentRating": "R",
+    "summary": "After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.",
+    "rating": 8.1,
+    "userRating": 8,
+    "viewCount": 1,
+    "lastViewedAt": 1505366512,
+    "year": 2017,
+    "tagline": "All you need is one killer track.",
+    "thumb": "/library/metadata/5019/thumb/1505358516",
+    "art": "/library/metadata/5019/art/1505358516",
+    "duration": 6720000,
+    "originallyAvailableAt": "2017-06-28",
+    "addedAt": 1505358481,
+    "updatedAt": 1505358516,
+    "primaryExtraKey": "/library/metadata/5022",
+    "ratingImage": "imdb://image.rating",
+    "Genre": [
+      {
+        "id": 251,
+        "filter": "genre=251",
+        "tag": "Crime",
+        "count": 33
+      },
+      {
+        "id": 16195,
+        "filter": "genre=16195",
+        "tag": "Music",
+        "count": 4
+      },
+      {
+        "id": 200,
+        "filter": "genre=200",
+        "tag": "Action",
+        "count": 156
+      },
+      {
+        "id": 161,
+        "filter": "genre=161",
+        "tag": "Thriller",
+        "count": 93
+      }
+    ],
     "Director": [
       {
-        "filter": "director=9032",
-        "id": 9032,
-        "tag": "Stephen Sandoval"
+        "id": 21848,
+        "filter": "director=21848",
+        "tag": "Edgar Wright"
       }
     ],
     "Writer": [
       {
-        "filter": "writer=9022",
-        "id": 9022,
-        "tag": "Ryan Ridley"
-      },
-      {
-        "filter": "writer=9028",
-        "id": 9028,
-        "tag": "Tom Kauffman"
+        "id": 18534,
+        "filter": "writer=18534",
+        "tag": "Edgar Wright",
+        "count": 2
       }
     ],
-    "addedAt": 1443897144,
-    "art": "/library/metadata/2101/art/1504841793",
-    "contentRating": "TV-MA",
-    "grandparentArt": "/library/metadata/2101/art/1504841793",
-    "grandparentKey": "/library/metadata/2101",
-    "grandparentRatingKey": "2101",
-    "grandparentTheme": "/library/metadata/2101/theme/1504841793",
-    "grandparentThumb": "/library/metadata/2101/thumb/1504841793",
-    "grandparentTitle": "Rick and Morty",
-    "guid": "com.plexapp.agents.thetvdb://275274/1/11?lang=en",
-    "index": 11,
-    "key": "/library/metadata/2113",
-    "librarySectionID": 2,
-    "librarySectionKey": "/library/sections/2",
-    "librarySectionType": "show",
-    "originallyAvailableAt": "2014-04-14",
-    "parentIndex": 1,
-    "parentKey": "/library/metadata/2102",
-    "parentRatingKey": "2102",
-    "parentThumb": "/library/metadata/2102/thumb/1504841793",
-    "parentTitle": "Season 1",
-    "rating": 8.2,
-    "ratingKey": "2113",
-    "summary": "Beth and Jerry go away on a trip, so Rick decides to throw a party.",
-    "thumb": "/library/metadata/2113/thumb/1505865546",
-    "title": "Ricksy Business",
-    "type": "episode",
-    "updatedAt": 1505865546,
-    "year": 2014
-  },
-  "Player": {
-    "local": false,
-    "publicAddress": "::1",
-    "title": "Plex Web (Chrome)",
-    "uuid": "mxa7medbldu3ow29"
-  },
-  "Server": {
-    "title": "WRITTLEGUY",
-    "uuid": "52a297bee9cc0b46224e312261102cc284a9c58d"
-  },
-  "event": "media.play",
-  "owner": true,
-  "user": false
+    "Producer": [
+      {
+        "id": 10136,
+        "filter": "producer=10136",
+        "tag": "Tim Bevan",
+        "count": 2
+      },
+      {
+        "id": 10137,
+        "filter": "producer=10137",
+        "tag": "Eric Fellner",
+        "count": 2
+      },
+      {
+        "id": 17765,
+        "filter": "producer=17765",
+        "tag": "Nira Park",
+        "count": 2
+      }
+    ],
+    "Country": [
+      {
+        "id": 9335,
+        "filter": "country=9335",
+        "tag": "US",
+        "count": 194
+      }
+    ],
+    "Role": [
+      {
+        "id": 11103,
+        "filter": "actor=11103",
+        "tag": "Ansel Elgort",
+        "count": 4,
+        "role": "Baby",
+        "thumb": "http://image.tmdb.org/t/p/original/uQYUfGvOZkB5x25Z19UeyLABHmr.jpg"
+      },
+      {
+        "id": 19898,
+        "filter": "actor=19898",
+        "tag": "Lily James",
+        "count": 2,
+        "role": "Deborah",
+        "thumb": "http://image.tmdb.org/t/p/original/rfN0XMbIQLvgGvm4V8ZaTcFa1II.jpg"
+      },
+      {
+        "id": 21849,
+        "filter": "actor=21849",
+        "tag": "Kevin Spacey",
+        "role": "Doc",
+        "thumb": "http://image.tmdb.org/t/p/original/cdowETe1PgXLjo72hDb7R7tyavf.jpg"
+      },
+      {
+        "id": 19334,
+        "filter": "actor=19334",
+        "tag": "Jamie Foxx",
+        "count": 3,
+        "role": "Bats",
+        "thumb": "http://image.tmdb.org/t/p/original/bcXscYxlsrHDenbo3BzK0f6pkaM.jpg"
+      },
+      {
+        "id": 21850,
+        "filter": "actor=21850",
+        "tag": "Jon Hamm",
+        "role": "Buddy",
+        "thumb": "http://image.tmdb.org/t/p/original/wb14AA6u8dqA0XNweRIeKXatzzc.jpg"
+      },
+      {
+        "id": 21851,
+        "filter": "actor=21851",
+        "tag": "Eiza González",
+        "role": "Darling",
+        "thumb": "http://image.tmdb.org/t/p/original/7e7YLQRWEh6amQAwPU5HKDY0TV9.jpg"
+      },
+      {
+        "id": 21852,
+        "filter": "actor=21852",
+        "tag": "CJ Jones",
+        "role": "Joseph"
+      },
+      {
+        "id": 9245,
+        "filter": "actor=9245",
+        "tag": "Jon Bernthal",
+        "count": 3,
+        "role": "Griff",
+        "thumb": "https://thetvdb.com/banners/actors/187971.jpg"
+      },
+      {
+        "id": 17329,
+        "filter": "actor=17329",
+        "tag": "Flea",
+        "count": 2,
+        "role": "Eddie",
+        "thumb": "http://image.tmdb.org/t/p/original/3mvSPp8RpuuPJUuNwq9PyjFu2Ug.jpg"
+      },
+      {
+        "id": 21853,
+        "filter": "actor=21853",
+        "tag": "Lanny Joon",
+        "role": "J.D.",
+        "thumb": "http://image.tmdb.org/t/p/original/4G0okfvoALMcbvZtnnuoyreVntS.jpg"
+      },
+      {
+        "id": 21854,
+        "filter": "actor=21854",
+        "tag": "Paul Williams",
+        "role": "The Butcher",
+        "thumb": "http://image.tmdb.org/t/p/original/qkGR5o0Yl8Q1PitH6N422NunOiN.jpg"
+      },
+      {
+        "id": 21855,
+        "filter": "actor=21855",
+        "tag": "R. Marcos Taylor",
+        "role": "Armie",
+        "thumb": "http://image.tmdb.org/t/p/original/4wZu4sBgV1NT9Z2ygj1qFnkJLAd.jpg"
+      },
+      {
+        "id": 21856,
+        "filter": "actor=21856",
+        "tag": "Sky Ferreira",
+        "role": "Baby's Mom",
+        "thumb": "http://image.tmdb.org/t/p/original/dBEZEapvanYwIWL9srIrZASEjeV.jpg"
+      },
+      {
+        "id": 21857,
+        "filter": "actor=21857",
+        "tag": "Hudson Meek",
+        "role": "Young Baby",
+        "thumb": "http://image.tmdb.org/t/p/original/npafxeehMauV6ewVDkliT9vSX3V.jpg"
+      },
+      {
+        "id": 21858,
+        "filter": "actor=21858",
+        "tag": "Brogan Hall",
+        "role": "Sam",
+        "thumb": "http://image.tmdb.org/t/p/original/6rl1dusLsH9aMp2YAaf65GCkU4l.jpg"
+      },
+      {
+        "id": 21859,
+        "filter": "actor=21859",
+        "tag": "Big Boi",
+        "role": "Restaurant Patron #1",
+        "thumb": "http://image.tmdb.org/t/p/original/cJw2bAx38acsVasf39HTSIimprH.jpg"
+      },
+      {
+        "id": 21860,
+        "filter": "actor=21860",
+        "tag": "Mike \"Killer Mike\" Render",
+        "role": "Restaurant Patron #2",
+        "thumb": "http://image.tmdb.org/t/p/original/cxJtMVQFsblZ6K0mvUNvtH6Gp3K.jpg"
+      },
+      {
+        "id": 21861,
+        "filter": "actor=21861",
+        "tag": "Jon Spencer",
+        "role": "Prison Guard"
+      },
+      {
+        "id": 13795,
+        "filter": "actor=13795",
+        "tag": "Jeff Chase",
+        "count": 3,
+        "role": "Jeffrey",
+        "thumb": "http://image.tmdb.org/t/p/original/x7W1nwnsITcPdODJ5OEP0HF71BH.jpg"
+      },
+      {
+        "id": 12539,
+        "filter": "actor=12539",
+        "tag": "Wilbur Fitzgerald",
+        "count": 2,
+        "role": "Judge",
+        "thumb": "http://image.tmdb.org/t/p/original/zkt1tKQpdmDcFtmoRSuZHIXQtDm.jpg"
+      },
+      {
+        "id": 21862,
+        "filter": "actor=21862",
+        "tag": "Brigitte Kali Canales",
+        "role": "Young Mother",
+        "thumb": "http://image.tmdb.org/t/p/original/jwLdsQd3USYIZNm08yVYp8RKmsC.jpg"
+      },
+      {
+        "id": 21863,
+        "filter": "actor=21863",
+        "tag": "Andy McDermott",
+        "role": "Officer Forster",
+        "thumb": "http://image.tmdb.org/t/p/original/pUktACS1t3C98bHSG60ZNbyAgJM.jpg"
+      },
+      {
+        "id": 21864,
+        "filter": "actor=21864",
+        "tag": "Ben VanderMey",
+        "role": "Frat Boy",
+        "thumb": "http://image.tmdb.org/t/p/original/aSKQg7FickyoHNiAyDE6XQrjKrI.jpg"
+      },
+      {
+        "id": 21865,
+        "filter": "actor=21865",
+        "tag": "Erica Frene",
+        "role": "Dog Lady",
+        "thumb": "http://image.tmdb.org/t/p/original/tUxfnz474s0yMs4rwdWuBQ7Hbhm.jpg"
+      },
+      {
+        "id": 21866,
+        "filter": "actor=21866",
+        "tag": "Shellita Boxie",
+        "role": "Bank Patron",
+        "thumb": "http://image.tmdb.org/t/p/original/d6RVp12Rb0SplgPycxXLn9bKulr.jpg"
+      },
+      {
+        "id": 21867,
+        "filter": "actor=21867",
+        "tag": "Allison King",
+        "role": "Nice Lady Teller",
+        "thumb": "http://image.tmdb.org/t/p/original/dJxzHvXiuLtqG82kgAwiTzU1DJv.jpg"
+      },
+      {
+        "id": 21868,
+        "filter": "actor=21868",
+        "tag": "Lance Palmer",
+        "role": "Lady's Dad",
+        "thumb": "http://image.tmdb.org/t/p/original/qzUO8BHEN8SGrVmMHdl61xXMElP.jpg"
+      },
+      {
+        "id": 21869,
+        "filter": "actor=21869",
+        "tag": "Keith Hudson",
+        "role": "Overweight Cop",
+        "thumb": "http://image.tmdb.org/t/p/original/3wRbmA8t85ggZrISVy9vJYL07SK.jpg"
+      },
+      {
+        "id": 21870,
+        "filter": "actor=21870",
+        "tag": "Ronald Joe Vasquez",
+        "role": "Pedestrian (uncredited)",
+        "thumb": "http://image.tmdb.org/t/p/original/c0TYiHAacaxDfGRoTemSJYIMy55.jpg"
+      },
+      {
+        "id": 21871,
+        "filter": "actor=21871",
+        "tag": "Troy Faruk",
+        "role": "Goon #5",
+        "thumb": "http://image.tmdb.org/t/p/original/5R21okoRhf3sjlHoN9EdCAltIdA.jpg"
+      },
+      {
+        "id": 21872,
+        "filter": "actor=21872",
+        "tag": "Danny Le Boyer",
+        "role": "Tequila Goon 3",
+        "thumb": "http://image.tmdb.org/t/p/original/m1lAUBPlYHCWwsCggyYCha0MMl1.jpg"
+      },
+      {
+        "id": 21873,
+        "filter": "actor=21873",
+        "tag": "Marshall Choka",
+        "role": "Angry Man on Cellphone",
+        "thumb": "http://image.tmdb.org/t/p/original/55gEVgC7oMtYvCDtppWDftI15LM.jpg"
+      },
+      {
+        "id": 21874,
+        "filter": "actor=21874",
+        "tag": "Thurman Sewell",
+        "role": "Hellcat Thug 2"
+      },
+      {
+        "id": 16419,
+        "filter": "actor=16419",
+        "tag": "Mark Smith",
+        "count": 2,
+        "role": "Prisoner"
+      },
+      {
+        "id": 21875,
+        "filter": "actor=21875",
+        "tag": "Duke Jackson",
+        "role": "Monroe County"
+      },
+      {
+        "id": 21876,
+        "filter": "actor=21876",
+        "tag": "Trey McGriff",
+        "role": "Homeless Man on Bench"
+      },
+      {
+        "id": 21877,
+        "filter": "actor=21877",
+        "tag": "Elijah Everett",
+        "role": "Security Guard"
+      },
+      {
+        "id": 21878,
+        "filter": "actor=21878",
+        "tag": "Sidney Sewell",
+        "role": "Hellcat Thug 1"
+      },
+      {
+        "id": 21879,
+        "filter": "actor=21879",
+        "tag": "David Conk",
+        "role": "Tequila Goon 4"
+      },
+      {
+        "id": 21880,
+        "filter": "actor=21880",
+        "tag": "Hal Whiteside",
+        "role": "Cook"
+      },
+      {
+        "id": 21881,
+        "filter": "actor=21881",
+        "tag": "Juliette Sicard",
+        "role": "Student Pedestrian"
+      },
+      {
+        "id": 21882,
+        "filter": "actor=21882",
+        "tag": "D.R. Lewis",
+        "role": "Waiter"
+      },
+      {
+        "id": 21883,
+        "filter": "actor=21883",
+        "tag": "Marvin E. West",
+        "role": "State Trooper"
+      },
+      {
+        "id": 21884,
+        "filter": "actor=21884",
+        "tag": "Connie Lee",
+        "role": "Upset Car Driver"
+      },
+      {
+        "id": 21885,
+        "filter": "actor=21885",
+        "tag": "James Blackshear",
+        "role": "Music Store Clerk"
+      },
+      {
+        "id": 21886,
+        "filter": "actor=21886",
+        "tag": "Christopher Beanland",
+        "role": "Bullhorn Cop"
+      },
+      {
+        "id": 21887,
+        "filter": "actor=21887",
+        "tag": "Marisol Correa",
+        "role": "Atlanta Cop (uncredited)"
+      },
+      {
+        "id": 21888,
+        "filter": "actor=21888",
+        "tag": "Elizabeth Davidovich",
+        "role": "Monroe County (uncredited)",
+        "thumb": "http://image.tmdb.org/t/p/original/7Av77ZFABPZ4BsJxMV6K5oGzWWC.jpg"
+      },
+      {
+        "id": 21889,
+        "filter": "actor=21889",
+        "tag": "Colin Lacativa",
+        "role": "Construction Worker (uncredited)"
+      },
+      {
+        "id": 21890,
+        "filter": "actor=21890",
+        "tag": "Ryan Newton",
+        "role": "Driver / Pedestrian (uncredited)"
+      },
+      {
+        "id": 21891,
+        "filter": "actor=21891",
+        "tag": "Donald K. Overstreet",
+        "role": "Man in Blue Truck (uncredited)"
+      },
+      {
+        "id": 21892,
+        "filter": "actor=21892",
+        "tag": "Walter Hill",
+        "role": "Courtroom interpreter",
+        "thumb": "http://image.tmdb.org/t/p/original/gCU3dgnNaZuvmArtBJgjCUMmimd.jpg"
+      }
+    ],
+    "Similar": [
+      {
+        "id": 21140,
+        "filter": "similar=21140",
+        "tag": "Dunkirk",
+        "count": 7
+      },
+      {
+        "id": 21032,
+        "filter": "similar=21032",
+        "tag": "Spider-Man: Homecoming",
+        "count": 11
+      },
+      {
+        "id": 21066,
+        "filter": "similar=21066",
+        "tag": "War for the Planet of the Apes",
+        "count": 5
+      },
+      {
+        "id": 21250,
+        "filter": "similar=21250",
+        "tag": "Atomic Blonde",
+        "count": 4
+      },
+      {
+        "id": 21027,
+        "filter": "similar=21027",
+        "tag": "Wonder Woman",
+        "count": 12
+      },
+      {
+        "id": 21026,
+        "filter": "similar=21026",
+        "tag": "Valerian and the City of a Thousand Planets",
+        "count": 8
+      },
+      {
+        "id": 21025,
+        "filter": "similar=21025",
+        "tag": "Guardians of the Galaxy Vol. 2",
+        "count": 11
+      },
+      {
+        "id": 21068,
+        "filter": "similar=21068",
+        "tag": "Get Out",
+        "count": 6
+      },
+      {
+        "id": 21253,
+        "filter": "similar=21253",
+        "tag": "The Big Sick",
+        "count": 3
+      },
+      {
+        "id": 21700,
+        "filter": "similar=21700",
+        "tag": "The Hitman's Bodyguard",
+        "count": 5
+      },
+      {
+        "id": 21138,
+        "filter": "similar=21138",
+        "tag": "The Lego Batman Movie",
+        "count": 3
+      },
+      {
+        "id": 21248,
+        "filter": "similar=21248",
+        "tag": "Logan Lucky",
+        "count": 3
+      },
+      {
+        "id": 21893,
+        "filter": "similar=21893",
+        "tag": "It Comes at Night",
+        "count": 2
+      },
+      {
+        "id": 21327,
+        "filter": "similar=21327",
+        "tag": "The Nice Guys",
+        "count": 2
+      },
+      {
+        "id": 21022,
+        "filter": "similar=21022",
+        "tag": "King Arthur: Legend of the Sword",
+        "count": 11
+      },
+      {
+        "id": 21065,
+        "filter": "similar=21065",
+        "tag": "Logan",
+        "count": 10
+      },
+      {
+        "id": 21021,
+        "filter": "similar=21021",
+        "tag": "Pirates of the Caribbean: Dead Men Tell No Tales",
+        "count": 11
+      },
+      {
+        "id": 21255,
+        "filter": "similar=21255",
+        "tag": "Baywatch",
+        "count": 6
+      },
+      {
+        "id": 21249,
+        "filter": "similar=21249",
+        "tag": "The Dark Tower",
+        "count": 3
+      },
+      {
+        "id": 21894,
+        "filter": "similar=21894",
+        "tag": "La La Land",
+        "count": 2
+      }
+    ]
+  }
 }
