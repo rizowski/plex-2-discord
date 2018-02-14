@@ -1,11 +1,11 @@
-const config = require('config');
-const axios = require('axios');
+import { discord } from 'config';
+import axios from 'axios';
 
-module.exports= {
+export default {
   sendEmbeded(data) {
-    return axios.post(config.webhookurl, {
-      avatar_url: config.bot.avatarUrl,
-      username: config.bot.username,
+    return axios.post(discord.webhookUrl, {
+      'avatar_url': discord.avatarUrl,
+      username: discord.username,
 
       embeds:[{
         title: data.title,
@@ -14,12 +14,10 @@ module.exports= {
           url: data.url
         },
         author: {
-          icon_url: data.author.icon,
+          'icon_url': data.author.icon,
           name: data.author.name,
         }
       }]
-    }).catch((err) => {
-      console.error(err.response.statusCode, err.response.statusText)
-    })
+    });
   }
-}
+};

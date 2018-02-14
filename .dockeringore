@@ -1,0 +1,7 @@
+**/*.*
+!README.md
+!LICENSE
+!package.json
+!config/**
+!build/**
+!node_modules/**

@@ -1,4 +1,3 @@
-
-const server = require('./src/server');
-
-server.start();
+require('source-map-support');
+require('babel-core/register');
+require('./src/server');

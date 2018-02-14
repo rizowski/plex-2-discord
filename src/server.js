@@ -1,31 +1,22 @@
-const config = require('config');
-const { Server } = require('hapi');
-const multer = require('multer');
-
-const upload = multer({ dest: './temp' });
-const ass = require('./assembler');
+import config from 'config';
+import { Server } from 'hapi';
+import registerPlugins from './plugins';
 
 let server = new Server();
 
-server.connection({ port: config.server.port, host: 'localhost' });
-
-server.route({
-  method: 'POST',
-  path: config.server.notifyUrl,
-  handler: function (request, reply) {
-    const body = JSON.parse(request.payload.payload.toString());
-    const image = request.payload.thumb;
-    ass.process(body, image);
-    reply('OK');
-  }
+server.connection({
+  port: config.server.port,
+  host: config.server.host
 });
 
-module.exports = {
-  start() {
-    return server.start()
-      .then(() => {
-        console.log(`Server running at: ${server.info.uri}`);
-      })
-      .catch(console.error);
-  }
-}
+registerPlugins(server)
+  .then(() => server.initialize())
+  .then(() => {
+    if (process.env.NODE_ENV !== 'test' || !module.parent) { // checks to see if file is being required
+      return server.start()
+        .then(() => server);
+    }
+
+    return server;
+  })
+  .catch(console.error);

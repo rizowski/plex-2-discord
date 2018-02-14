@@ -1,22 +1,43 @@
+import discord from './discord';
+import art from './art';
 
-const discord = require('./discord');
-const art = require('./art');
-
-function getData(body) {
-  console.log(JSON.stringify(body));
+function getBaseData(body) {
   return {
     userImage: body.Account.thumb,
     username: body.Account.title,
 
     player: body.Player,
 
-    title: body.Metadata.grandparentTitle || body.Metadata.title,
-    secondTitle: body.Metadata.title,
     art: body.Metadata.art,
     summary: body.Metadata.summary,
     type: body.Metadata.type,
     rating: body.rating && body.rating / 2,
+    year: body.Metadata.year,
   };
+}
+
+function getMovieData(body) {
+  return Object.assign(
+    getBaseData(body),
+    { title: body.Metadata.title }
+  );
+}
+
+function getTvData(body) {
+  return Object.assign(
+    getBaseData(body),
+    { title: body.Metadata.grandparentTitle, secondTitle: body.Metadata.title }
+  );
+}
+
+function getData(body) {
+  if (body.Metadata.type === 'movie') {
+    return getMovieData(body);
+  } else if (body.Metadata.type === 'episode') {
+    return getTvData(body);
+  }
+
+  return getBaseData(body);
 }
 
 const supportedEvents = {
@@ -33,7 +54,7 @@ const supportedEvents = {
     }
     if(body.type === 'episode'){
       return {
-        title: `Now Playing ${ body.title } ${ body.secondTitle }`,
+        title: `Now Playing ${ body.title }:${ body.secondTitle }`,
         summary: body.summary,
         author: {
           name: body.username,
@@ -49,8 +70,10 @@ const supportedEvents = {
   //   };
   // },
   'media.rate': (body) => {
+    const titles = [body.title, body.secondTitle];
+
     return {
-      title: `Rated ${ body.title } ${ body.secondTitle } ${ body.rating } stars.`,
+      title: `Rated "${ titles.join(' ') }" ${ body.rating } stars.`,
       summary: body.summary,
       author: {
         name: body.username,
@@ -65,24 +88,24 @@ const sourceMap = {
   episode: art.getTv,
 };
 
-module.exports = {
+export default {
   process(body) {
-    const doAction = supportedEvents[body.event];
+    const formatEvent = supportedEvents[body.event];
 
-    if (doAction) {
-      const data = getData(body);
-      const fetchImage = sourceMap[data.type];
-
-      return fetchImage(data.title)
-        .then((url) => {
-          const payload = doAction(data);
-
-          payload.url = url;
-
-          if (payload) {
-            return discord.sendEmbeded(payload);
-          }
-        });
+    if(!formatEvent) {
+      return Promise.resolve();
     }
+
+    const data = getData(body);
+    const fetchImage = sourceMap[data.type];
+
+    return fetchImage(data.title, data.year)
+      .then((url) => {
+        const payload = formatEvent(data);
+
+        payload.url = url;
+
+        return discord.sendEmbeded(payload);
+      });
   }
 };
