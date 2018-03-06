@@ -13,6 +13,7 @@
     "good-squeeze": "^5.0.2",
     "hapi": "^16.6.2",
     "hapi-router": "^3.5.0",
+    "joi": "^13.1.2",
     "lodash.get": "^4.4.2",
     "movie-art": "^1.0.6",
     "tmdb": "^2.2.0"
@@ -21,7 +22,6 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
-    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.11.0",
     "eslint-config-rizowski": "^1.0.2",
@@ -32,7 +32,8 @@
     "start": "node build/server.js",
     "local": "nodemon .",
     "build": "babel src -d build -s inline",
-    "test": "NODE_ENV=test echo \"Error: no test specified\" && exit 1",
+    "mocha": "NODE_ENV=${NODE_ENV:-test} mocha",
+    "test": "npm run mocha -- --opts ./test/mocha.opts -r babel-core/register",
     "lint": "esw --fix --quiet"
   },
   "repository": {

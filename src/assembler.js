@@ -1,44 +1,6 @@
 import discord from './discord';
 import art from './art';
-
-function getBaseData(body) {
-  return {
-    userImage: body.Account.thumb,
-    username: body.Account.title,
-
-    player: body.Player,
-
-    art: body.Metadata.art,
-    summary: body.Metadata.summary,
-    type: body.Metadata.type,
-    rating: body.rating && body.rating / 2,
-    year: body.Metadata.year,
-  };
-}
-
-function getMovieData(body) {
-  return Object.assign(
-    getBaseData(body),
-    { title: body.Metadata.title }
-  );
-}
-
-function getTvData(body) {
-  return Object.assign(
-    getBaseData(body),
-    { title: body.Metadata.grandparentTitle, secondTitle: body.Metadata.title }
-  );
-}
-
-function getData(body) {
-  if (body.Metadata.type === 'movie') {
-    return getMovieData(body);
-  } else if (body.Metadata.type === 'episode') {
-    return getTvData(body);
-  }
-
-  return getBaseData(body);
-}
+import { getMetaData } from './meta-data';
 
 const supportedEvents = {
   'media.play': (body) => {
@@ -96,7 +58,7 @@ export default {
       return Promise.resolve();
     }
 
-    const data = getData(body);
+    const data = getMetaData(body);
     const fetchImage = sourceMap[data.type];
 
     return fetchImage(data.title, data.year)
