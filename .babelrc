@@ -1,15 +1,5 @@
 {
-  "plugins": [
-    "add-module-exports"
-  ],
-  "presets": [
-    [
-      "env",
-      {
-        "targets": {
-          "node": "8.9.3"
-        }
-      }
+    "presets": [
+        [ "@babel/preset-env" ]
     ]
-  ]
 }

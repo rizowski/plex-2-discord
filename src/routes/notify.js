@@ -10,7 +10,9 @@ export default {
   config: {
     description: 'The notification url for plex service to call',
     validate: {
-      payload: joi.any().required(),
+      payload: joi.object({
+        payload: joi.binary().required()
+      }).required(),
     }
   },
   handler(request, reply) {
